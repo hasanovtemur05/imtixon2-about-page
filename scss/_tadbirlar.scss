@@ -1,0 +1,84 @@
+.tadbirlar{
+    height: auto;
+    margin-top: 60px;
+    display: grid;
+    gap: 30px;
+    &__title{
+        font-size: 28px;
+        color: #333333;
+        font-family: "font2";
+    }
+    &__cards{
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 20px;
+    }
+    &__card{
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+        }
+    }
+    &__desc{
+        font-size: 12px;
+        color: #666666;
+        font-family: "font1";
+    }
+}
+@media(min-width:768px){
+    .tadbirlar{
+        margin-top: 80px;
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__card{
+            height: 100%;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__desc{
+            font-size: 14px;
+        }
+
+    }
+}
+@media(min-width:992px){
+    .tadbirlar{
+        margin-top: 100px;
+        &__cards{
+            display: grid;
+            grid-template-columns: 25% auto 25%;
+        }
+       
+        &__desc{
+            margin-left: 30%;
+            font-size: 14px;
+        }
+        &__btns{
+            margin-left: 30%;
+        }
+        &__title{
+            font-size: 34px;
+            margin-left: 30%;
+        }
+    }
+}
+@media(min-width:1200px){
+    .tadbirlar{
+        &__desc{
+            margin-left: 20%;
+            font-size: 16px;
+        }
+        &__btns{
+            margin-left: 20%;
+        }
+        &__title{
+            margin-left: 20%;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.hero{
+    height: auto;
+    margin-top: 30px;
+    &__right{
+        display: grid;
+        gap: 20px;
+        padding: 10px 0px 30px 0px;
+        border-bottom: 2px solid #cccccc;
+    }
+    &__title{
+        font-size: 28px;
+        font-family: "font2";
+        color: #2E3038;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__cards1{
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 20px;
+    }
+    &__card1{
+        width: 100%;
+        height: auto;
+        border: 1px solid #cccccc;
+        display: grid;
+        gap: 30px;
+        padding: 10px 25px;
+        border-radius: 10px;
+        &__title{
+            font-size: 28px;
+            color: #184AFB;
+            font-family: "font1";
+        }
+        &__desc{
+            font-size: 12px;
+            color: #333333;
+            font-family: "font1";
+        }
+    }
+    &__cards2{
+        display: grid;
+        gap: 20px;
+    }
+    &__card2{
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+           
+        }
+    }
+    &__about{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 20px;
+    }
+    &__desc{
+        font-size: 12px;
+        color: #828388;
+        font-family: "font2";
+    }
+    &__btn{
+        padding: 8px 25px;
+        border-radius: 20px;
+        border: 1px solid #cccccc;
+        transition: 0.3s;
+        color: #2E3038;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px gray;
+
+        }
+    }
+}
+@media (min-width:576px){
+    .hero{
+        &__right{
+            display: grid;
+            gap: 30px;
+        }
+        &__cards1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__about{
+            display: grid;
+            grid-template-columns: 60% 25%;
+            justify-content: space-between;
+        }
+    }
+}
+@media (min-width:768px){
+    .hero{
+        &__right{
+            display: grid;
+            gap: 40px;
+        }
+        &__cards1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__about{
+            display: grid;
+            grid-template-columns: 60% 20%;
+            justify-content: space-between;
+            
+        }
+        &__desc{
+            font-size: 14px;
+        }
+    }
+}
+@media (min-width:992px){
+    .hero{
+        margin-top: 90px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        &__title{
+            width: 400px;
+            font-size: 34px;
+        }
+    }  
+}
+@media (min-width:1200px){
+    .hero{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        &__title{
+            width: 400px;
+            font-size: 40px;
+        }
+        &__cards2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__desc{
+            font-size: 16px;
+        }
+        &__btn{
+            font-size: 16px;
+        }
+        &__about{
+            display: grid;
+            grid-template-columns: 60% 15%;
+            justify-content: space-between;
+            
+        }
+    }  
+}

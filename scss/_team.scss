@@ -1,0 +1,77 @@
+.team{
+    height: auto;
+    margin-top: 60px;
+    border-top: 2px solid #cccccc;
+    padding: 15px 0px;
+    display: grid;
+    gap: 30px;
+    &__head{
+        display: grid;
+        gap: 30px;
+    }
+    &__title{
+        font-size: 28px;
+        font-family: "font2";
+        color: #2E3038;
+    }
+    &__cards{
+        display: grid;
+        gap: 30px;
+    }
+    &__card{
+        display: grid;
+        gap: 10px;
+        justify-content: center;
+    }
+    &__desc{
+        font-size: 12px;
+        color: #56585E;
+        font-family: "font1";
+        text-align: center;
+    }
+}
+@media(min-width:600px){
+    .team{
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media(min-width:992px){
+    .team{
+        display: grid;
+        gap: 80px;
+       &__head{
+        display: grid;
+        grid-template-columns: 27% 63%
+       }
+       &__title{
+        font-size: 34px;
+       }
+       
+    }
+}
+@media(min-width:1200px){
+    .team{
+        margin-top: 120px;
+        display: grid;
+        gap: 100px;
+       &__head{
+        display: grid;
+        grid-template-columns: 18% 82%
+       }
+       &__title{
+        font-size: 40px;
+       }
+       &__desc{
+        font-size: 16px;
+       }
+       &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+       }
+       
+    }
+}

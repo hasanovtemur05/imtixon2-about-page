@@ -1,0 +1,53 @@
+.harakatlar{
+    height: auto;
+    margin-top: 50px;
+    &__right{
+        display: grid;
+        gap: 20px;
+        border-bottom: 2px solid #cccccc;
+        padding: 10px 0px 30px 0px;
+    }
+    &__title{
+        font-size: 28px;
+        color:#2E3038;
+        font-weight: 600;
+        font-family: "font2";
+    }
+    &__desc{
+        font-size: 12px;
+        color: #5A5C72;
+        font-family: "font2";
+    }
+}
+@media (min-width:768px){
+    .harakatlar{
+        &__desc{
+            font-size: 14px;
+        }
+    }
+}
+@media (min-width:992px){
+    .harakatlar{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        &__title{
+            font-size: 34px;
+        }
+        &__desc{
+            width: 80%;
+        }
+    }
+}
+@media (min-width:1200px){
+    .harakatlar{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        &__title{
+            font-size: 40px;
+        }
+        &__desc{
+            font-size: 16px;
+            width: 80%;
+        }
+    }
+}
